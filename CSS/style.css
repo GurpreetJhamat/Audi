@@ -90,7 +90,10 @@ body{
     background: #fff;
 }
 .models{
-    margin: 0 30px 0 40px;
+    /* width: 95%; */
+    /* margin: 0 auto; */
+    padding: 20px 20px;
+    position: relative;
 }
 .models h2{
     display: inline-block;
@@ -98,21 +101,53 @@ body{
 .showcase{
     margin-bottom: 40px;
 }
+
+.models .btn{
+    position: absolute;
+    top: 150px;
+}
+
+
 .images{
     display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: no-wrap;
+    flex: 1 1 1 1;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
 }
 .img{
     display: flex;
     flex-direction: column;
+    position: relative;
+    
     /* border: 2px solid red; */
     text-align: center;
     width: 20%;
+    transition: all 0.3s ease-in-out;
 }
 
 .img h3{
     margin: 10px;
+}
+/* .img > img{
+    /* width: 50%; 
+} */
+
+.prev-btn{
+    left: 1.5rem;
+}
+.next-btn{
+    right: 1.5rem;
+}
+
+.slide{
+    transform: translateX(-300px)
+}
+.slide2{
+    transform: translateX(-600px)
 }
 .section{
     width: 100%;
