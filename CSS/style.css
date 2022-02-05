@@ -95,7 +95,7 @@ body{
     padding: 20px 20px;
     position: relative;
 }
-.models h2{
+.showcase h2{
     display: inline-block;
 }
 .showcase{
@@ -104,11 +104,15 @@ body{
 
 .models .btn{
     position: absolute;
-    top: 150px;
+    top: 60px;
+    background: transparent;
+    border: none;
+    font-size: 30px
+    /* padding: 0px; */
 }
 
 
-.images{
+.images, .images-body{
     display: flex;
     width: 90%;
     margin: 0 auto;
@@ -142,6 +146,12 @@ body{
 .next-btn{
     right: 1.5rem;
 }
+.prev-body-btn{
+    left: 1.5rem;
+}
+.next-body-btn{
+    right: 1.5rem;
+}
 
 .slide{
     transform: translateX(-300px)
@@ -149,6 +159,19 @@ body{
 .slide2{
     transform: translateX(-600px)
 }
+
+.all-types{
+    /* opacity: 0; */
+    display: none;
+    /* position: relative; */
+}
+.all-models{
+     display: none;
+}
+ .show-tab{
+     display: block;
+ }
+
 .section{
     width: 100%;
     height: 70vh;

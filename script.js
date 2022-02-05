@@ -1,8 +1,16 @@
 const slider = document.querySelector('.images');
+const slider2 = document.querySelector('.images-body');
 const img = document.querySelector('.img');
 const prevBtn = document.querySelector('.prev-btn')
 const nextBtn = document.querySelector('.next-btn')
+const prevBodyBtn = document.querySelector('.prev-body-btn')
+const nextBodyBtn = document.querySelector('.next-body-btn')
+const allModel = document.querySelector('.all-models')
+const allTypes = document.querySelector('.all-types')
+const model = document.querySelector('.model')
+const body = document.querySelector('.body')
 let compStyles = window.getComputedStyle(slider);
+
 function sideScroll(element, direction, speed, distance, step) {
     scrollAmount = 0;
     var slideTimer = setInterval(function () {
@@ -18,31 +26,28 @@ function sideScroll(element, direction, speed, distance, step) {
         }
     }, speed);
 }
-let elWidth = img.offsetWidth * 5
+let elWidth = (img.offsetWidth * 5)
 nextBtn.addEventListener('click', () => {
-    
     sideScroll(slider, 'left', 10, elWidth, 25);
-    // if (slider.classList.contains('slide')){
-    //     // slider.style.setProperty("transform", "none")
-    //     // console.log(typeof(slider.style.transform = "translateX(" + `${-300 - 300}` + "px)"))
-    //     // console.log(slider.style.transform)
-    //     slider.classList.remove('slide')
-    //     slider.classList.add('slide2')
-        console.log(true)
-    //     console.log(slider.style.transform)
-    //     return
-    //     // slider.style.transform = "translateX(0px)"
-    // }
-    // slider.classList.add('slide')
-    // slider.style.transform = "translateX(-300px)"
-    // console.log(compStyles.getPropertyValue('transform'))
-    // console.log(slider.scrollLeft)
-    // slider.scrollLeft += 1000;
-    // console.log(slider.scrollLeft)
-    // slider.classList.remove('slide');
-    // slider.classList.add('slide');
 })
 
 prevBtn.addEventListener('click', () => {
-    sideScroll(slider, 'right', 10, elWidth, 20);
+    sideScroll(slider, 'right', 10, elWidth, 25);
+})
+nextBodyBtn.addEventListener('click', () => {
+    sideScroll(slider2, 'left', 10, elWidth, 25);
+})
+
+prevBodyBtn.addEventListener('click', () => {
+    sideScroll(slider2, 'right', 10, elWidth, 25);
+})
+
+model.addEventListener('click', () => {
+    allModel.classList.add('show-tab')
+    allTypes.classList.remove('show-tab')
+})
+body.addEventListener('click', () => {
+    console.log('hello')
+    allTypes.classList.add('show-tab')
+    allModel.classList.remove('show-tab')
 })
