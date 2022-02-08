@@ -1,41 +1,61 @@
+@font-face {
+    font-family: AudiType;
+    src: url("../font/AudiType.otf") format("opentype");
+}
+
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: AudiType, Arial, Helvetica, sans-serif;
 }
+/* .font{
+    font-family: Arial, Helvetica, sans-serif;
+} */
 #header{
     width: 100%;
     height: 100vh;
 }
 .navigation{
     width: 100%;
-    height: 6vh;
+    display: flex;
+    align-items: center;
+    /* height: 6vh; */
     background: #fff;
 }
 .navigation nav{
+    width: 90%; 
+    margin: 0 auto;
     display: flex;
-    border-bottom: 2px solid #000;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px 0;
+    /* border-bottom: 2px solid #000; */
 }
 /* .navigation nav span{
     float: right; 
     align-self: flex-end;
 } */
 .navigation img{
-    width: 120px;
-    height: 94px;
-    padding-left: 10px;
+    width: 80px;
+    height: 30px;
+    flex: 1;
+    /* padding: 10px 0 0 10px; */
 }
 .navigation ul{
-    margin-top: 30px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    flex: 10;
+    justify-content: space-around;
 }
 .navigation ul li{
     list-style-type: none;
     display: inline;
     font-size: 20px;
-    padding: 20px 0 0 30px;
+    /* padding: 20px 0 0 30px; */
     margin: 0;
 }
 .navigation ul li:hover{
@@ -47,7 +67,7 @@ body{
     font-size: 30px;
 }
 .home{
-    background: url("../images/header2.jpg");
+    background: url("../images/header.jpg") center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
@@ -56,10 +76,11 @@ body{
 }
 .home h1{
     font-size: 50px;
+    margin: 0;
     padding: 30px 0 0 30px;
 }
 .home h3{
-    padding: 0 0 0 30px;
+    padding: 30px 0 0 30px;
     margin: 0px;   
 }
 .button{
@@ -175,8 +196,9 @@ body{
 .section{
     width: 100%;
     height: 70vh;
-    background: url('../images/second.jpg');
-    background-size: 100% 100%;
+    background: url('../images/etron-GT.jpg') center center fixed;
+    background-size: cover;
+    /* background-size: 100% 110%, cover;  */
     background-repeat: no-repeat;
     color: #fff;
     float: right;
@@ -185,8 +207,9 @@ body{
     font-size: 50px;
     padding: 30px 0 0 30px;
 }
-.section h3{
-    padding: 0 0 0 30px;   
+.section p{
+    margin: 0 0 0 30px;
+    /* padding: 0 0 0 30px;    */
 }
 /* .button{
     margin: 30px 0 0 30px;
