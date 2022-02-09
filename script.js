@@ -9,7 +9,7 @@ const contents = document.querySelectorAll('.models')
 const tabItem = document.querySelectorAll('.showcase h2')
 
 let compStyles = window.getComputedStyle(slider);
-let elWidth = (img.offsetWidth * 5)
+// let elWidth = (img.offsetWidth * 5)
 // console.log(tabItem)
 function sideScroll(element, direction, speed, distance, step) {
     scrollAmount = 0;
@@ -27,17 +27,21 @@ function sideScroll(element, direction, speed, distance, step) {
     }, speed);
 }
 nextBtn.addEventListener('click', () => {
+    let elWidth = (img.offsetWidth * 5)
     sideScroll(slider, 'left', 10, elWidth, 25);
 })
 
 prevBtn.addEventListener('click', () => {
+    let elWidth = (img.offsetWidth * 5)
     sideScroll(slider, 'right', 10, elWidth, 25);
 })
 nextBodyBtn.addEventListener('click', () => {
+    let elWidth = (img.offsetWidth * 5)
     sideScroll(slider2, 'left', 10, elWidth, 25);
 })
 
 prevBodyBtn.addEventListener('click', () => {
+    let elWidth = (img.offsetWidth * 5)
     sideScroll(slider2, 'right', 10, elWidth, 25);
 })
 
@@ -55,6 +59,7 @@ tabItem.forEach((item, idx) => {
     item.addEventListener('click', () => {
         hideAllContent()
         hideAllItems()
+        // sideScroll(slider, 'left', 10, 0, 25);
         item.classList.add('active')
         contents[idx].classList.add('show-tab')
     })
