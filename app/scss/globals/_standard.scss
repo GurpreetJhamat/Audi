@@ -1,0 +1,48 @@
+@use '../utils' as utils;
+
+@include utils.font-face("AudiType", AudiType);
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: AudiType, Arial, Helvetica, sans-serif;
+    background: lightgrey;
+    /* overflow: hidden; */
+    /* width: 100%; */
+}
+
+a, a:visited, a:active{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 69.375rem;
+    margin: 0 auto;
+
+    &--pall {
+    padding-top: 4.375rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4.375rem;
+    padding-left: 1.5rem;
+
+    // @include breakpoints-up(large) {
+    //   padding-top: 6rem;
+    //   padding-bottom: 6rem;
+    // }
+  }
+}
+
+.flex--1{
+    flex: 1;
+}
