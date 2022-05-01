@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="header">
-      <nav class="nav container container--pall">
-        <a href="#" class="nav__hamburger flex--1">
+    <header class="header">
+      <nav class="nav container">
+        <a href="#" class="nav__hamburger">
           <div class="toggle">
             <span></span>
             <span></span>
@@ -26,16 +26,24 @@
           <span>Menu</span>
         </a>
 
-        <a href="#" class="nav__logo flex--1">
+        <a href="#" class="nav__logo">
           <img class="" src="./images/logo.svg" alt="" />
         </a>
-
-        <div class="nav__search flex--1">
+        <div class="nav__xlarge">
+            <nav class="  container container--px">
+                <a href="#">Models</a>
+            <a href="#">Shop</span></a>
+            <a href="#">Own</span></a>
+            <a href="#">Discover</a>
+            <a href="#">Audi Electric</a>
+            </nav>
+        </div>
+        <div class="nav__search">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
-        <div class="nav__hidden">
-            <nav class="nav__expand">
+        <div class="nav__hidden ">
+            <nav class="nav__expand container container--px">
                 <a href="#"><span>Models</span> <span><i class="fa-solid fa-chevron-right"></i></span></a>
             <a href="#"><span>Shop</span> <span><i class="fa-solid fa-chevron-right"></i></span></a>
             <a href="#"><span>Own</span> <span><i class="fa-solid fa-chevron-right"></i></span></a>
@@ -44,6 +52,231 @@
             </nav>
         </div>
       </nav>
+
+      <main class="main">
+        <div class="main__hero container">
+          <h1><span>Uplift your horizons.</span></h1>
+          <p>The new era of high-class mobility continues.</p>
+          <button type="button">
+            Learn more
+          </button>
+        </div>
+      </main>
+    </header>
+
+    <div class="banner">
+      <div class="banner__disclaimer container">
+        <p>The vehicles shown here are concept vehicles that are not available as a production model.</p>
+      </div>
+    </div>
+      <div class="inventory">
+        <div class="inventory__banner container">
+          <div class="inventory__label">
+          Search Audi inventory:
+        </div>
+        <div class="inventory__models">
+          <label for="cars">Models</label>
+
+          <select name="cars" class="cars">
+            <option value="Audi A3">Audi A3</option>
+            <option value="Audi A4">Audi A4</option>
+            <option value="Audi A5">Audi A5</option>
+            <option value="Audi A6">Audi A6</option>
+            <option value="Audi e-tron">Audi e-tron</option>
+          </select>
+        </div>
+        <div class="inventory__count">
+          <a href=""><span><b>79</b> New cars <i class="fa-solid fa-chevron-right"></i></span></a>
+          <a href=""><span><b>5</b> Pre-owned cars <i class="fa-solid fa-chevron-right"></i></span></a>
+        </div>
+        </div>
+      </div>
+
+      <div class="showcase">
+        <div class="showcase__tabs container">
+            <h2 class="active">Models</h2>
+            <h2 class="body">Body style</h2>
+        </div>
+        <div class="showcase__model container show-tab">
+            <div class="showcase__images">
+                <!-- <button><i class="fas fa-arrow-circle-left"></i></button> -->
+                <div class="showcase__img">
+                    <img src="images/a3.png">
+                    <!-- <span>Audi A3</span> -->
+                    <span>Audi A3</span>
+                </div>
+                <div class="showcase__img">
+                    <img src="images/a4.png">
+                    <span class="font">Audi A4</span>
+                </div>
+                <div class="showcase__img">
+                    <img src="images/r8.png">
+                    <span>Audi R8</span>
+                </div>
+                <div class="showcase__img">
+                    <img src="images/a6.png">
+                    <span>Audi A6</span>
+                </div>
+                <div class="showcase__img">
+                    <img src="images/etron.png">
+                    <span>Audi e-tron</span>
+                </div>
+                
+                <div class="showcase__img">
+                    <img src="images/a5.png">
+                    <span>Audi A5 aaa</span>
+                </div>
+                <div class="showcase__img">
+                    <img src="images/q3.png">
+                    <span>Audi Q3</span>
+                </div>
+
+                extra 
+                <div class="showcase__img">
+                    <img src="images/a3.png">
+                    <span>Audi A3</span>
+                </div>
+                <div class="showcase__img">
+                    <img src="images/a4.png">
+                    <span>Audi A4</span>
+                </div>
+                <div class="showcase__img">
+                    <img src="images/r8.png">
+                    <span>Audi R8</span>
+                </div>
+                <div class="showcase__img">
+                    <img src="images/a4.png">
+                    <span>Audi A4</span>
+                </div>
+                <div class="showcase__img">
+                    <img src="images/r8.png">
+                    <span>Audi R8</span>
+                </div>
+            </div>
+            
+             <!--
+            <button class="btn next-btn"><i class="fas fa-arrow-circle-right"></i></button> -->
+        </div>
+        <button class="btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        
+        <!-- <div class="models">
+            <div class="images-body">
+                 <button><i class="fas fa-arrow-circle-left"></i></button> 
+                <div class="img">
+                    <img src="images/body-type/suv.png">
+                    <span>SUV</span>
+                </div>
+                <div class="img">
+                    <img src="images/body-type/sedan.png">
+                    <span>Sedan</span>
+                </div>
+                <div class="img">
+                    <img src="images/body-type/quattro.png">
+                    <span>Allroad quattro</span>
+                </div>
+                <div class="img">
+                    <img src="images/body-type/coupe.png">
+                    <span>Coupe</span>
+                </div>
+                <div class="img">
+                    <img src="images/body-type/sportback.png">
+                    <span>Sportback</span>
+                </div>
+                <div class="img">
+                    <img src="images/body-type/spyder.png">
+                    <span>Spyder</span>
+                </div>
+                <div class="img">
+                    <img src="images/body-type/roadster.png">
+                    <span>Roadster</span>
+                </div>
+
+                extra 
+                <div class="img">
+                    <img src="images/body-type/cabriolet.png">
+                    <span>cabriolet</span>
+                </div>
+                <div class="img">
+                    <img src="images/body-type/avant.png">
+                    <span>Avant</span>
+                </div>
+                <div class="img">
+                    <img src="images/body-type/sport.png">
+                    <span>Sport</span>
+                </div>
+
+            </div>
+            <button class="btn prev-body-btn"><i class="fas fa-arrow-circle-left"></i></button>
+            <button class="btn next-body-btn"><i class="fas fa-arrow-circle-right"></i></button>
+        </div> -->
+    </div>
+    <div class="vision">
+      <div class="vision__container container">
+        <div class="vision__img">
+          <img src="/images/electric.jpg" alt="">
+        </div>
+        <div class="vision__text">
+          <h2>A clear vision for the future.</h2>
+          <button type="button">Learn about Audi sustainability</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress">
+      <div class="progress__container ">
+        <div class="progress__text container">
+          <h2>Progress is always in Season</h2>
+          <button type="button" class="btn-dark">View new car offers</button>
+          <button type="button" class="btn-light">View used car offers</button>
+        </div>
+        <div class="progress__img">
+          <div class="progress__float">
+            <h2>Electric is now</h2>
+            <p>Powered by progress, Audi electric vehicles maintain the precision craftsmanship and performance that Audi is renowned for.</p>
+            <button type="button">View electric models</button>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="etron">
+      <div class="etron__container container">
+        <div class="etron__img">
+          <img src="/images/etron-GT.jpg" alt="">
+        </div>
+        <div class="vision__text">
+          <h2>Experience the Audi RS e‑tron GT.</h2>
+          <button type="button" class="btn btn-dark">Explore now</button>
+          <button type="button" class="btn btn-light"  >Discover Audi EV models</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="teaser">
+      <div class="teaser__grid">
+        <div class="grid__item">
+          <img src="/images/teaser1.webp" alt="">
+          <p><strong>Sport isn’t a game.</strong>
+          It’s a way of life. Explore our Audi Sport lineup.</p>
+
+          <a href="#">Learn more</a>
+        </div>
+        <div class="grid__item"><img src="/images/front.jpg" alt="">
+          <p><strong>Sport isn’t a game.</strong>
+          It’s a way of life. Explore our Audi Sport lineup.</p>
+
+          <a href="#">Learn more</a>
+        </div>
+        <div class="grid__item">
+          <img src="/images/back.jpg" alt="">
+          <p><strong>Sport isn’t a game.</strong>
+          It’s a way of life. Explore our Audi Sport lineup.</p>
+
+          <a href="#">Learn more</a>
+        </div>
+      </div>
     </div>
     <script src="app/js/main.js"></script>
   </body>

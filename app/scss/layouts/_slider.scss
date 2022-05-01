@@ -1,0 +1,233 @@
+.showcase{
+    position: relative;
+    // overflow: hidden;
+    height: 40vh;
+    background: #fff;
+
+    &__tabs{
+         h2{
+    display: inline-block;
+    line-height: 1.5;
+    // padding: 20px 0 0 20px;
+    color: rgb(187, 182, 182);
+    font-weight: 100;    
+    font-size: 18px; 
+    cursor: pointer;
+}
+    }
+
+    &__model{
+        width: 95%;
+    /* margin: 0 auto; */
+    /* display: none; */
+    /* padding: 20px 20px; */
+    // position: absolute;
+    // top: 50%;
+    // left: 50%; 
+    // transform: translate(-50%, -50%);
+    overflow: hidden; 
+    /* transition: 2s display ease-in; */
+    // visibility: hidden;
+    // opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+
+    
+    // top: 40px;
+    // background: transparent;
+    // border: none;
+    // font-size: 30px
+    /* padding: 0px; */
+}
+    .showcase__images{
+        // .images, .images-body{
+            display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // width: 90%;
+    // margin: 0 auto;
+    // flex-wrap: no-wrap;
+    // flex: 1 ;
+    // overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    .showcase__img{
+
+        // flex: 1 1 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 100%;
+        }
+    }
+// }
+    }
+    
+
+
+
+.btn{
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    transform: translateY(-50%);
+    
+    font-size: 26px;
+    border: none;
+    
+    outline: none;
+    background: transparent;
+    color: rgb(187, 182, 182);
+    &:hover{
+        cursor: pointer;
+    }
+    }
+
+    .prev-btn{
+    // left: -35px;
+    left: 40px;
+    padding: 0 0.5rem 0 0;
+    border-right: 1.5px solid rgb(187, 182, 182);
+}
+.next-btn{
+    // right: -35px;
+    right: 40px;
+    padding: 0 0 0 0.5rem;
+    border-left: 1.5px solid rgb(187, 182, 182);
+}
+
+.slide{
+    transform: translateX(-300px)
+}
+.slide2{
+    transform: translateX(-600px)
+}
+ .show-tab{
+     /* display: block; */
+     visibility: visible;
+     opacity: 1;
+     /* display: block; */
+ }
+
+ .active{
+     color: #000 !important;
+     text-decoration: underline;
+ }
+}
+
+
+
+
+
+
+
+
+
+// .showcase{
+//     /* margin-bottom: 40px; */
+//     position: relative;
+//     overflow: hidden;
+//     height: 40vh;
+// }
+// .showcase h2{
+//     display: inline-block;
+//     line-height: 1.5;
+//     padding: 20px 0 0 20px;
+//     color: rgb(187, 182, 182);
+//     font-weight: 100;    
+//     font-size: 18px; 
+//     cursor: pointer;
+// }
+// .tabs{
+//     /* position: relative; */
+// }
+// .models{
+//     width: 95%;
+//     /* margin: 0 auto; */
+//     /* display: none; */
+//     /* padding: 20px 20px; */
+//     position: absolute;
+//     top: 50%;
+//     left: 50%; 
+//     transform: translate(-50%, -50%);
+//     /* overflow: hidden; */
+//     /* transition: 2s display ease-in; */
+//     visibility: hidden;
+//     opacity: 0;
+//     transition: visibility 0s, opacity 0.5s linear;
+// }
+
+
+// .models .btn{
+//     position: absolute;
+//     top: 40px;
+//     background: transparent;
+//     border: none;
+//     font-size: 30px
+//     /* padding: 0px; */
+// }
+
+
+// .images, .images-body{
+//     display: flex;
+//     width: 90%;
+//     margin: 0 auto;
+//     flex-wrap: no-wrap;
+//     flex: 1 1 1 1;
+//     overflow: hidden;
+//     position: relative;
+//     transition: all 0.3s ease-in-out;
+// }
+// .img{
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+//     cursor: pointer;
+//     /* border: 2px solid red; */
+//     text-align: center;
+//     width: 20%;
+//     transition: all 0.3s ease-in-out;
+// }
+
+// .img h3{
+//     margin: 10px;
+// }
+// /* .img > img{
+//     /* width: 50%; 
+// } */
+
+// .prev-btn{
+//     left: 1.5rem;
+// }
+// .next-btn{
+//     right: 1.5rem;
+// }
+// .prev-body-btn{
+//     left: 1.5rem;
+// }
+// .next-body-btn{
+//     right: 1.5rem;
+// }
+
+// .slide{
+//     transform: translateX(-300px)
+// }
+// .slide2{
+//     transform: translateX(-600px)
+// }
+//  .show-tab{
+//      /* display: block; */
+//      visibility: visible;
+//      opacity: 1;
+//      /* display: block; */
+//  }
+
+//  .active{
+//      color: #000 !important;
+//      text-decoration: underline;
