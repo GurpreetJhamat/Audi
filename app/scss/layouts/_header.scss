@@ -6,6 +6,7 @@
   color: #000;
   background-color: #ffffff;
   position: relative;
+  // height: 100vh;
   // background: rgb(146, 0, 0);
   
 
@@ -204,7 +205,7 @@
 
   .main {
     width: 100%;
-    height: calc(100vh - 3.875rem);
+    height: calc(100% - 3.875rem);
     background-image: url(/images/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -255,6 +256,7 @@
         padding: 1rem 2rem;
         font-size: 1rem;
         border: none;
+        margin-bottom: 2rem;
         @include utils.breakpoints-up(medium) {
         // background: rgb(0, 127, 8);
         // display: none;
