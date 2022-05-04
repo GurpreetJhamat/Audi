@@ -85,6 +85,12 @@
         // flex-basis: 50%;
         flex: 1;
     }
+    @include utils.breakpoints-up(large){
+        // flex-basis: 50%;
+        flex: auto;
+        // align-self: flex-start;
+    }
+
     label {
       color: rgb(179, 179, 179);
       font-size: 0.8125rem;
@@ -114,6 +120,11 @@
         // flex-basis: 50%;
         flex: 1;
         // justify-self: flex-start;
+    }
+    @include utils.breakpoints-up(large){
+        // flex-basis: 50%;
+        flex: auto;
+        // align-self: flex-start;
     }
     a {
       color: #ffffff;

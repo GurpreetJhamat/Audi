@@ -24,10 +24,10 @@
     padding-right: 1.5rem;
     // max-width: 69.375rem;
     @include utils.breakpoints-up(medium) {
-    background: rgb(0, 127, 0);
+    // background: rgb(0, 127, 0);
   }
   @include utils.breakpoints-up(large) {
-    background: rgb(0, 19, 127);
+    // background: rgb(0, 19, 127);
     padding-left: 0;
     padding-right: 0;
   }

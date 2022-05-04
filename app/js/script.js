@@ -21,10 +21,11 @@ function sideScroll(element, direction, speed, distance, step) {
             element.scrollLeft -= step;
         }
         scrollAmount += step;
-        if (scrollAmount >= distance) {
-            window.clearInterval(slideTimer);
-        }
+        
     }, speed);
+    if (scrollAmount >= distance) {
+      window.clearInterval(slideTimer);
+    }
 }
 nextBtn.addEventListener('click', () => {
     let elWidth = (img.offsetWidth * 5)
@@ -35,15 +36,15 @@ prevBtn.addEventListener('click', () => {
     let elWidth = (img.offsetWidth * 5)
     sideScroll(slider, 'right', 10, elWidth, 25);
 })
-nextBodyBtn.addEventListener('click', () => {
-    let elWidth = (img.offsetWidth * 5)
-    sideScroll(slider2, 'left', 10, elWidth, 25);
-})
+// nextBodyBtn.addEventListener('click', () => {
+//     let elWidth = (img.offsetWidth * 5)
+//     sideScroll(slider2, 'left', 10, elWidth, 25);
+// })
 
-prevBodyBtn.addEventListener('click', () => {
-    let elWidth = (img.offsetWidth * 5)
-    sideScroll(slider2, 'right', 10, elWidth, 25);
-})
+// prevBodyBtn.addEventListener('click', () => {
+//     let elWidth = (img.offsetWidth * 5)
+//     sideScroll(slider2, 'right', 10, elWidth, 25);
+// })
 
 // model.addEventListener('click', () => {
 //     allModel.classList.add('show-tab')
