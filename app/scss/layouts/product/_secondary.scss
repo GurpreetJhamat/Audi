@@ -1,0 +1,116 @@
+@use '../../utils/' as utils;
+.secondary{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    &__container{
+        padding: 1.5rem 0;
+        a{
+            color: inherit;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        a:not(:last-child){
+            padding-right: 1.75rem;
+        }
+    }
+}
+
+.description{
+    width: 100%;
+    background: #ffffff;
+
+    // &__container{
+    //     display: flex;
+    //     flex-direction: column;
+    //     padding-right: 1.5rem;
+    //     padding-left: 1.5rem;
+    //     // justify-content: center;
+    //     // align-items: center;
+    //     padding-top: 100px;
+    //     padding-bottom: 100px;
+
+    //     @include utils.breakpoints-up(large){
+    //         padding-right: 0;
+    //         padding-left: 0;
+    //     }
+        
+    // }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // z-index: 10;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        padding-top:3.75rem;
+        padding-bottom: 3.76rem;
+
+        @include utils.breakpoints-up(large){
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        h2{
+            font-size: 2.25rem;
+            text-align: center;
+            font-weight: 400px;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+        }
+
+        p{
+            margin-bottom: 2.5rem;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 400;
+            list-style: 1.25rem;
+            letter-spacing: 1px;
+        }
+
+        .description__btn{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            // padding: 10px;
+            // justify-content: space-around;
+            @include utils.breakpoints-up(medium){
+                flex-direction: row;
+                width: 80%;
+            }
+        }
+        .description__btn button{
+            // display: block;
+            // align-self: center;
+            // width: 30%;
+            // flex: 1;
+            
+            padding: 1rem 2.2rem;
+            background-color: transparent;
+            border: 1px solid #000;
+            font-size: 1rem;
+            line-height: 24px;
+
+            @include utils.breakpoints-up(medium){
+                width: 100%;
+            }
+        }
+
+        .description__btn .btn-dark{
+            background: #000;
+            color: white;
+            margin-bottom: 1rem;
+            @include utils.breakpoints-up(medium){
+                margin: 0 1rem 0 0;
+            }
+        }
+        .description__btn .btn-light{
+            background: #ffffff;
+            color: #000;
+            @include utils.breakpoints-up(medium){
+                // margin: 0 0 0 1rem;
+            }
+        }
+    }
+}    

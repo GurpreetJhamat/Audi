@@ -1,4 +1,4 @@
-@use '../utils/' as utils;
+@use '../../utils/' as utils;
 .progress{
     width: 100%;
     background: #ffffff;
@@ -45,11 +45,6 @@
             }
         }
         .progress__btn button{
-            // display: block;
-            // align-self: center;
-            // width: 30%;
-            // flex: 1;
-            
             padding: 1rem 2.2rem;
             background-color: transparent;
             border: 1px solid #000;
@@ -77,61 +72,12 @@
             }
         }
     }
+}
 
-    &__img{
-        height: 120vh;
-        width: 100%;
-        background-image: url('/images/electric2.jpg');
-        background-attachment: fixed;
-        background-size: 120% ;
-        background-position: center;
-        background-repeat: no-repeat;
+.figures{
+    width: 100%;
+    &__container{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        // z-index: 1;
-    }
-
-    &__float{
-        width: 85%;
-        background: #ffffff;
-        color: #000;
-        padding: 2.25rem;
-        position: absolute;
-        top: 100px;
-        z-index: 1;
-
-        @include utils.breakpoints-up(large){
-            width: 70%;
-            left: 2.5rem;
-            background: rgb(228, 6, 6);
-        }
-
-        @include utils.breakpoints-up(medium){
-            width: 70%;
-            left: 2.5rem;
-            background: rgb(6, 195, 228);
-        }
-        h2{
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-        }
-        p{
-            font-size: 1rem;
-            font-weight: 400;
-            margin-bottom: 1.5rem;
-            line-height: 24px;
-        }
-
-        button{
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            line-height: 24px;
-            background: #000;
-            border: none;
-            color: #fff;
-        }
+        flex-direction: row;
     }
 }

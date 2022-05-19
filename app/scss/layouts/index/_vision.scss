@@ -1,5 +1,5 @@
-@use "../utils" as utils;
-.etron{
+@use "../../utils" as utils;
+.vision{
     width: 100%;
     // height: 80vh;
     background: #ffffff;
@@ -56,24 +56,20 @@
             // font-stretch: 130%;
             letter-spacing: 3px;
         }
-        .etron__btn{
-            display: flex;
-            flex-direction: row;
-            @include utils.breakpoints-up(medium) {
-                flex-direction: column;
-        }
-        }
-        .etron_btn button{
+
+        button{
             width: 70%;
             padding: 1rem 2rem;
             background: #000;
             color: #ffffff;
             border: none;
             font-size: 1rem;
-            
+            @include utils.breakpoints-up(medium) {
+    width: 100%;
+    }
         }
 
-        .etron__btn .btn{
+        .btn{
             // display: block;
             // align-self: center;
             width: 50%;
@@ -82,29 +78,19 @@
             border: 1px solid #000;
             font-size: 1rem;
             line-height: 24px;
-            
         }
 
-        .etron__btn .btn-dark{
+        .btn-dark{
             background: #000;
             color: white;
-            margin-right: 1rem;
-            @include utils.breakpoints-up(medium) {
-                margin-right: 0;
-    margin-bottom: 1rem;
-    width: 100%;
-    }
-            // margin-bottom: 1rem;
+            margin-bottom: 1rem;
         }
-        .etron__btn .btn-light{
+        .btn-light{
             // background: #000;
             color: #000;
             width: 70%;
-            @include utils.breakpoints-up(medium) {
-    width: 100%;
-    }
-    //     }
+        }
     }
 
-    }
+
 }

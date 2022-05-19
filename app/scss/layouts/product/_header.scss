@@ -1,0 +1,31 @@
+@use "../../utils";
+@import "../index/header";
+
+.header {
+  .main {
+    background-image: url("/images/product.jpg");
+    &__hero {
+
+      .main__btn{
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        @include utils.breakpoints-up(medium){
+          margin-top: 0;
+          flex-direction: row;
+        }
+      }
+      button {
+        border: 1px solid #fff;
+        &.btn-secondary {
+          background: transparent;
+          border: 1px solid #fff;
+          color: #fff;
+          @include utils.breakpoints-up(medium){
+          margin-left: 1rem;
+        }
+        }
+      }
+    }
+  }
+}
