@@ -113,4 +113,78 @@
             }
         }
     }
-}    
+}
+
+.figures{
+    width: 100%;
+    padding-bottom: 200px;
+
+    &__container{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 2.5rem;
+        // justify-content: center;
+        // align-items: center;
+          @include utils.breakpoints-up(medium) {
+    // background: rgb(0, 127, 0);
+    flex-direction: row;
+  }
+
+        .figures__column{
+            flex: 1;
+            position: relative;
+            min-height: 100%;
+            padding: .5rem;
+            li{
+                list-style-type: none;
+            }
+
+            .figures__title{
+                font-size: 1rem;
+                padding-top: 1rem;
+            }
+            .figures__figure{
+                font-size: 2.25rem;
+                padding: 1.25rem 0;
+            }
+            .figures__description{
+                font-size: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            &:not(:last-child)::after{
+                content: '';
+                position: absolute;
+                background: #d6d6d6;
+                width: 100%;
+                height: 2px;
+                // width: 2px;
+                // height: 100%;
+                // top: 0;
+                left: 0;
+                // right: 0;
+                bottom: 0;
+
+                @include utils.breakpoints-up(medium){
+                    width: 2px;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                    // bottom: auto;
+                    left: auto;
+                    // right: auto;
+                }
+                // transform: rotateX(50deg);
+            }
+
+            &:nth-child(2){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                // align-self: center;
+            }
+        }
+    }
+}
