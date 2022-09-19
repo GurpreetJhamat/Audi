@@ -105,13 +105,13 @@
         @include utils.breakpoints-up(large){
             width: 70%;
             left: 2.5rem;
-            background: rgb(228, 6, 6);
+            // background: rgb(228, 6, 6);
         }
 
         @include utils.breakpoints-up(medium){
             width: 70%;
             left: 2.5rem;
-            background: rgb(6, 195, 228);
+            // background: rgb(6, 195, 228);
         }
         h2{
             font-size: 1.5rem;

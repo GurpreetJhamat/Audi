@@ -6,8 +6,9 @@
   background: #fff;
 
   &__tabs {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding: 1.5rem;
+    // padding-right: 1.5rem;
+    // padding-left: 1.5rem;
     h2 {
       display: inline-block;
       line-height: 1.5;
@@ -16,6 +17,7 @@
       font-weight: 100;
       font-size: 18px;
       cursor: pointer;
+      margin-bottom: 0;
     }
     @include utils.breakpoints-up(large) {
       // background: rgb(0, 19, 127);
